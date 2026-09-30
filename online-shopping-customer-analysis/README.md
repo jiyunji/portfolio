@@ -73,11 +73,10 @@ df['check'].value_counts()   # True 980 / False 20
 - 데이터를 그대로 믿지 않고 **직접 검증**하는 태도
 
 ## 폴더 구성
-<online-shopping-customer-analysis/>
 ```
 online-shopping-customer-analysis/
 ├── README.md
 ├── E_commerce_Analysis.ipynb    # 데이터 점검 · 품질 검증 · 고객/상품 분석
 ├── images/                      # 대시보드 스크린샷
-└── data/                     
+└── data/                      
 ```
