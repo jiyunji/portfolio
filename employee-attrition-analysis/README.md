@@ -68,6 +68,7 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 
 직접 나눈 4개 카테고리가 논리적으로 타당한지 확인하기 위해 요인분석(Factor Analysis)을 수행했습니다.
 
+![dashboard](images/factor_analysis.png)
 
 ### 3-5. 군집분석
 
