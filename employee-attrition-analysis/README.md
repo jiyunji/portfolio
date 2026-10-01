@@ -77,12 +77,10 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 ![dashboard](images/dendrogram.png)
 
 [K-means 군집 산점도]
-![K-means 군집 결과](images/kmeans_scatter.png)
--->
+![dashboard](images/K-means_Clustering_Scatterplot.png)
 
-<!-- 📷 [이미지 5: 군집별 평균 비교표] 노트북의 df.groupby("cluster_kmeans").mean() 결과 캡처
-![군집별 특성](images/cluster_profile.png)
--->
+[군집별 평균 비교표]
+![dashboard](images/cluster_mean.png)
 
 군집별 평균을 비교해 해석한 결과입니다.
 
