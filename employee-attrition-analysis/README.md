@@ -97,9 +97,7 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 
 10개 독립변수로 이직 여부를 설명하는 로지스틱 회귀를 적합했습니다. (Pseudo R² = 0.1528)
 
-<!-- 📷 [이미지 6: 기본 로지스틱 회귀 결과표] print(logit_basic.summary()) 출력 캡처
-![로지스틱 회귀 결과](images/logit_basic_summary.png)
--->
+![dashboard](images/logistic_regression.png)
 
 표준화한 변수 기준으로, 영향이 큰 변수는 다음과 같았습니다.
 
@@ -121,11 +119,10 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 - `JobSatisfaction × OverTime`
 - `DistanceFromHome × WorkLifeBalance`
 
+![dashboard](images/logistic_regression_add.png)
+
 p-value를 확인해 **유의한 2개(`MonthlyIncome × PercentSalaryHike`, `YearsAtCompany × GrowthPotential2`)만** 최종 모델에 남겼습니다.
 
-<!-- 📷 [이미지 7: 교호작용 포함 회귀 결과표] 채택된 교호작용 2개 행을 표시한 캡처
-![교호작용 모델 결과](images/logit_interaction_summary.png)
--->
 
 ## 5. 결론
 
@@ -143,21 +140,18 @@ p-value를 확인해 **유의한 2개(`MonthlyIncome × PercentSalaryHike`, `Yea
 ```
 .
 ├── README.md
-├── notebooks/
-│   └── 이직률_결정_요인_탐구.ipynb
+├── employee-attrition-analysis.ipynb # 이직률_결정_요인_탐구.ipynb
+│   
 ├── docs/
 │   ├── project_PPT.pdf
 │   └── project_details.pdf
-├── images/          # README에 쓰이는 시각화
+├── images/          # 시각화 자료
 └── data/            # 데이터셋 (직접 내려받아 배치)
 ```
 
 ## 7. 역할
 
-<!-- 본인이 맡은 부분을 구체적으로 적어주세요. 예: 변수 선택 및 EDA, 군집분석, 로지스틱 회귀 모델링 등 -->
-
-- 이지윤: (작성 필요)
-- 이예은: (작성 필요)
+- 팀장, PPT 제작 및 분석 전 과정 공동 토의 , 교호작용항 아이디어 제안으로 모형 확장에 기여
 
 ## 8. 한계 및 개선 방향
 
