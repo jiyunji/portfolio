@@ -4,21 +4,15 @@
 
 | | |
 |---|---|
-| **팀 구성** | 이지윤, 이예은 (2인, 2조) |
-| **과목** | 다변량 분석 |
+| **팀 구성** | 2인 구성, (팀장 담당) |
 | **데이터** | IBM HR Analytics Employee Attrition & Performance (1,470명) |
 | **사용 도구** | Python (pandas, scikit-learn, statsmodels, scipy, factor_analyzer, matplotlib, seaborn) |
 | **자료** | [발표 자료(PDF)](docs/project_PPT.pdf) · [보충 자료(PDF)](docs/project_details.pdf) |
 
-<!-- 📷 [이미지 A: 대표 이미지 (선택)] K-means 군집 산점도 또는 최종 회귀 결과 중 가장 보기 좋은 것 1장
-<p align="center"><img src="images/main_visual.png" width="80%"></p>
--->
-
----
 
 ## 1. 문제 의식과 목표
 
-기업의 이직률 상승이 이슈가 되고 있지만, 많은 기업이 급여 수준이나 근속연수 같은 **단일 지표**만으로 이직 원인을 판단합니다. 이렇게 보면 여러 요인이 함께 작용하는 실제 이직 구조를 놓치기 쉽습니다.
+기업의 이직률 상승이 이슈가 되고 있지만, 많은 기업이 **단일 지표**만으로 이직 원인을 판단합니다. 이렇게 보면 여러 요인이 함께 작용하는 실제 이직 구조를 놓치기 쉽습니다.
 
 **목표: 이직을 설명하는 다양한 정량 요인을 통합적으로 분석하고, 이직 위험이 높은 집단의 특성을 찾는다.**
 
@@ -27,7 +21,7 @@
 - **출처**: IBM HR Analytics Employee Attrition & Performance (HR·직원 이직 분석에 쓰이는 공개 데이터셋)
 - **규모**: 직원 1,470명
 - **종속변수**: `Attrition` (이직 여부, 이직=1 / 잔류=0)
-- 데이터 파일은 저장소에 포함하지 않았습니다. 위 데이터셋을 내려받아 `data/` 폴더에 넣으면 노트북을 그대로 실행할 수 있습니다.
+- 데이터 파일은 저장소에 포함하지 않았습니다. 
 
 ## 3. 분석 흐름
 
@@ -68,23 +62,12 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 
 이직 여부별로 각 변수의 분포를 박스플롯으로 비교했습니다. 이직자는 잔류자보다 월급, 근속연수, 나이가 전반적으로 낮았고, 직무 만족도도 낮은 편이었습니다. 초과근무(`OverTime`)는 이직자 쪽에서 뚜렷하게 높았습니다.
 
-<!-- 📷 [이미지 1: EDA 박스플롯]
-     노트북 EDA 셀의 4x3 박스플롯 전체를 1장으로 넣거나, 아래처럼 2~3장으로 나눠 넣기
-     (MonthlyIncome / YearsAtCompany / Age 한 줄, JobSatisfaction / OverTime / GrowthPotential2 한 줄)
-<p align="center">
-  <img src="images/eda_boxplot_1.png" width="32%">
-  <img src="images/eda_boxplot_2.png" width="32%">
-  <img src="images/eda_boxplot_3.png" width="32%">
-</p>
--->
+![dashboard](images/boxplot_sample.png)
 
 ### 3-4. 요인분석
 
 직접 나눈 4개 카테고리가 논리적으로 타당한지 확인하기 위해 요인분석(Factor Analysis)을 수행했습니다.
 
-<!-- 📷 [이미지 2: 요인분석 결과 (선택)] 요인 적재량 표 또는 scree plot 캡처. 결과가 없거나 복잡하면 생략 가능
-![요인분석 결과](images/factor_analysis.png)
--->
 
 ### 3-5. 군집분석
 
