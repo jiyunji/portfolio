@@ -74,14 +74,9 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 
 비슷한 특성을 가진 직원 집단을 찾기 위해 계층적 군집분석(Ward linkage)과 K-means를 사용했습니다. K-means의 군집 수는 Elbow Method와 실루엣 분석으로 검토해 **k=4**로 정했습니다.
 
-<!-- 📷 [이미지 3: 군집 수 결정] 덴드로그램 + Elbow 그래프를 나란히 (실루엣 그래프를 넣으려면 3장)
-<p align="center">
-  <img src="images/dendrogram_ward.png" width="48%">
-  <img src="images/elbow_kmeans.png" width="48%">
-</p>
--->
+![dashboard](images/dendrogram.png)
 
-<!-- 📷 [이미지 4: K-means 군집 산점도]
+[K-means 군집 산점도]
 ![K-means 군집 결과](images/kmeans_scatter.png)
 -->
 
