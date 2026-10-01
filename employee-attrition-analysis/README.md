@@ -39,7 +39,7 @@
 | 카테고리 | 변수 |
 |---|---|
 | 개인 특성 | `Age`, `YearsAtCompany`, `DistanceFromHome` |
-| 직무 요인 | `OverTime`, `JobSatisfaction`, `WorkLifeBalance`, `YearsInCurrentRole` |
+| 직무 요인 | `OverTime`, `JobSatisfaction`, `YearsInCurrentRole` |
 | 보상 요인 | `MonthlyIncome`, `PercentSalaryHike` |
 | 조직 문화 | `RelationshipSatisfaction` |
 
