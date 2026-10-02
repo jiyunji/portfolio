@@ -125,12 +125,13 @@ df_original["GrowthPotential2"] = df_original["MeanYearsByJobLevel"] - df_origin
 
 p-value를 확인해 **유의한 2개(`MonthlyIncome × PercentSalaryHike`, `YearsAtCompany × GrowthPotential2`)만** 최종 모델에 남겼습니다.
 
+![dashboard](images/logistic_regression_final.png)
 
 ## 5. 결론
 
 **이직은 '보상 × 성장성 × 근무환경'이 함께 작용한 결과로 설명된다.**
 
-- **보상**: 급여가 높을수록 이직 확률이 낮았고, 급여와 인상률의 교호작용이 유의해 인상률의 효과가 급여 수준에 따라 달라졌습니다. 핵심 인재에게는 차등적인 보상·인상률 전략이 필요합니다.
+- **보상**: 급여가 높을수록 이직 확률이 낮았으며, 급여 × 인상률의 교호작용도 유의했습니다. 특히 고연봉·고인상률일수록 이직 위험이 낮고, 저연봉·저인상률은 상대적으로 높은 이직 위험을 보였습니다. 핵심 인재에게는 차등적인 보상·인상률 전략이 필요합니다.
 - **성장성·경력**: 근속연수와 성장 지표(`GrowthPotential2`)의 교호작용이 유의했습니다. 팀은 이를 오래 근무했지만 성장이 정체된 직원이 이직 위험이 크다는 신호로 해석했고, 승진 속도 관리·직무 이동·경력개발 프로그램이 필요하다고 보았습니다.
 - **직무·워라밸**: 직무 만족, 워라밸, 통근 거리가 이직과 연결되었습니다. 재택·하이브리드·배치 변경 같은 정책을 검토할 수 있습니다.
 - **조직 문화**: 관계 만족이 낮을수록, 초과근무가 많을수록 이직 가능성이 높았습니다.
@@ -142,8 +143,7 @@ p-value를 확인해 **유의한 2개(`MonthlyIncome × PercentSalaryHike`, `Yea
 ```
 .
 ├── README.md
-├── employee-attrition-analysis.ipynb # 이직률_결정_요인_탐구.ipynb
-│   
+├── employee-attrition-analysis.ipynb # 이직률_결정_요인_탐구.ipynb 
 ├── docs/
 │   ├── project_PPT.pdf
 │   └── project_details.pdf
