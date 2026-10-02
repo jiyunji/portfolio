@@ -79,5 +79,5 @@ online-shopping-customer-analysis/
 ├── README.md
 ├── E_commerce_Analysis.ipynb    # 데이터 점검 · 품질 검증 · 고객/상품 분석
 ├── images/                      # 대시보드 스크린샷
-└── data/                      
+└── data/                        # 데이터셋 (직접 내려받아 배치)
 ```
