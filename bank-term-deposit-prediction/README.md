@@ -6,7 +6,6 @@
 | 항목 | 내용 |
 |---|---|
 | 형태 | 팀 프로젝트 (3인), Kaggle 형식 ML 대회 |
-| 내 역할 | 팀장 (Kaggle 제출·회의·중간 점검), 전처리, 모델링·하이퍼파라미터 조정, PPT·코드 정리 |
 | 데이터 | Bank Marketing 고객 데이터 31,647행, 가입 비율 11.7% |
 | 평가 지표 | F1-score |
 | **최종 결과** | **검증 데이터 F1 = 0.618** (train:validation = 8:2, `random_state=42`) |
@@ -72,6 +71,7 @@ CatBoost  ── Bagging(n=50) ─┘
 | 이지윤 (팀장) | Kaggle 제출·회의 추진·중간 점검, 전처리(month 변환, Label Encoding), 모델링 및 하이퍼파라미터 조정, PPT·코드 정리 |
 | 이예은 | 특성 엔지니어링, `scale_pos_weight`, LightGBM·CatBoost·Bagging 앙상블 추진, 발표 대본 |
 | 전정인 | 다양한 방향성 제시, 발표 |
+팀장 (Kaggle 제출·회의·중간 점검), 전처리, 모델링·하이퍼파라미터 조정, PPT·코드 정리 
 
 ## 저장소 구조
 
