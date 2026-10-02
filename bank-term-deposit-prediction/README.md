@@ -65,14 +65,9 @@ CatBoost  ── Bagging(n=50) ─┘
 - 성능을 높이는 방법(SMOTE, Stacking 등)이 오히려 과적합을 만들 수 있어, 성능과 일반화 사이의 균형을 확인해야 한다는 점
 - 팀장으로서 참여가 저조한 팀원에게 수행 가능한 업무를 구체적으로 나눠 주고 어려운 부분을 함께 풀며 일정을 맞춘 경험
 
-## 팀 구성
+## 역할
 
-| 이름 | 역할 |
-|---|---|
-| 이지윤 (팀장) | Kaggle 제출·회의 추진·중간 점검, 전처리(month 변환, Label Encoding), 모델링 및 하이퍼파라미터 조정, PPT·코드 정리 |
-| 이예은 | 특성 엔지니어링, `scale_pos_weight`, LightGBM·CatBoost·Bagging 앙상블 추진, 발표 대본 |
-| 전정인 | 다양한 방향성 제시, 발표 |
-팀장 (Kaggle 제출·회의·중간 점검), 전처리, 모델링·하이퍼파라미터 조정, PPT·코드 정리 
+- 팀장 (Kaggle 제출·회의·중간 점검), 전처리, 모델링·하이퍼파라미터 조정, PPT·코드 정리 
 
 ## 저장소 구조
 
@@ -84,16 +79,13 @@ CatBoost  ── Bagging(n=50) ─┘
 │   ├── 01_smote_lightgbm.ipynb              # SMOTE (미채택)
 │   ├── 02_oof_gbm_cat.ipynb                 # OOF 예측 (미채택)
 │   └── 03_stacking_early_stopping.ipynb     # Stacking (미채택)
+│   └── 04_lgbm_param_fixed.ipynb            # 파라미터 조정 (미채택)
 └── README.md
 ```
 
 ## 실행 방법
 
-대회 제공 데이터(`train.csv`, `test.csv`, `submission_example.csv`)는 저장소에 포함하지 않았습니다. 노트북과 같은 폴더에 직접 넣고 실행하세요.
-
-```bash
-pip install numpy pandas scipy scikit-learn lightgbm catboost imbalanced-learn
-```
+대회 제공 데이터(`train.csv`, `test.csv`, `submission_example.csv`)는 저장소에 포함하지 않았습니다. data/ 폴더에 데이터를 넣고 실행하세요.
 
 ## 사용 기술
 
