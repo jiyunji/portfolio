@@ -53,7 +53,7 @@ df['check'].value_counts()   # True 980 / False 20
 ### 6. 대시보드
 - Tableau로 **고객군 · 상품별 · 월별 매출 추이**를 한 화면에 구성해 비 개발자도 확인할 수 있는 환경 구축
 
-![dashboard](image.png)
+![dashboard](dashboard.png)
 
 ## 비즈니스 제안
 
