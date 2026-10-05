@@ -151,6 +151,7 @@
 
 ---
 
+
 ## 저장소 구조
 
 ```
@@ -159,6 +160,10 @@
 ├── portfolio/
 │   ├── portfolio.pdf
 ├── online_shop_analysis/
+│   ├── README.md
+│   ├── E_commerce_Analysis.ipynb
+│   ├── images/
+│   ├── data/   
 ├── 03_shoe_brand_marketing/
 ├── 04_bank_term_deposit/
 │   ├── README.md
