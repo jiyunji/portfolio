@@ -5,7 +5,7 @@
 데이터 수집, 품질 점검에서 시작해 분석, 인사이트 도출까지 이어서 해 온 프로젝트 5개를 정리한 저장소입니다.
 
 - Contact: jiyoonlee249@gmail.com
-- Portfolio PDF: [`portfolio.pdf`](./portfolio.pdf)
+- Portfolio PDF: [`portfolio.pdf`](./portfolio/portfolio.pdf)
 
 ---
 
