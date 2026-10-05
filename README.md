@@ -150,7 +150,15 @@
 - **한계**: 실제 주가는 하나의 사건에도 여러 요인이 동시에 작용해 딱 떨어지는 해석이 어려움. 시각화 중심 EDA의 한계를 보완하기 위해 회귀분석 등 정량 검증으로 요인별 영향을 분석할 계획
 
 ---
-
+sneaker-brand-text-analysis/
+├── README.md
+├── 01_data_collection/
+│   ├── collect_blog_reviews.ipynb    # 네이버 API 블로그 본문 수집
+│   └── collect_store_reviews.ipynb   # 스마트스토어 리뷰 수집
+├── 02_analysis/
+│   └── salomon_analysis.ipynb        # 전처리 · Word2Vec 확장 · 감성 · 분류 분석
+├── images/                           # 워드클라우드, 감성 분석, 분류 차트
+└── data/         
 
 ## 저장소 구조
 
@@ -158,21 +166,13 @@
 .
 ├── README.md
 ├── portfolio/
-│   ├── portfolio.pdf
-├── online_shop_analysis/
-│   ├── README.md
-│   ├── E_commerce_Analysis.ipynb
-│   ├── images/
-│   ├── data/   
-├── 03_shoe_brand_marketing/
-├── 04_bank_term_deposit/
-│   ├── README.md
-│   ├── final/
-│   └── experiments/
-├── 05_employee_attrition/
-└── 06_sell_in_may_eda/
+├── online-shopping-customer-analysis/
+├── sneaker-brand-text-analysis/
+├── bank-term-deposit-prediction/
+├── employee-attrition-analysis/
+└── sell_in_may_eda/
 ```
 
 ## Contact
 
-이지윤 · jiyoonlee249@gmail.com · [GitHub](https://github.com/jiyunji)
+이지윤 · jiyoonlee249@gmail.com · [GitHub](https://github.com/jiyunji/portfolio.git)
